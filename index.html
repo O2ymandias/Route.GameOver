@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Abdulrhman Muhamed Ebaid">
+
+    <title>Game Over</title>
+
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Nerko One -->
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+    <!-- Comfortaa -->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts -->
+
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/./style.css">
+</head>
+
+<body>
+
+    <section id="games">
+        <header>
+            <img class="w-100" src="./images/wraper.png" alt="game">
+        </header>
+
+        <nav class="w-75 mx-auto navbar navbar-expand-lg rounded-5 position-sticky z-3 top-0">
+            <div class="container-fluid">
+                <h1 class="navbar-brand fs-4 d-flex justify-content-center align-items-center m-0 text-uppercase">
+                    <img class="me-1" src="./images/logo-sm.png" width="40" alt="logo">
+                    Game Reviews
+                </h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul id="categoriesLinks" class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" data-category="mmorpg" href="#">mmorpg</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-category="shooter" href="#">shooter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-category="sailing" href="#">sailing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-category="permadeath" href="#">permadeath</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-category="superhero" href="#">superhero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-category="pixel" href="#">pixel</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="my-5">
+            <section>
+                <div class="container">
+                    <div id="gamesData" class="row g-4">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </section>
+
+    <section id="details" class="d-none">
+        <div class="container py-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2 class="mb-3">Details Game</h2>
+                <i id="closeDetails" class="fa fa-xmark fa-xl text-secondary"></i>
+            </div>
+            <div id="gameDetails" class="row g-4">
+            </div>
+        </div>
+    </section>
+
+    <div class="loading d-none">
+        <span class="loader"></span>
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>
